@@ -1,0 +1,71 @@
+<html
+<head>
+<title>registration form</title>
+</head>
+<body>
+	<form id="registrationForm" action="register.php" method="POST">
+		Name:
+		<input type="text" id="name" name="name" required><br><br>
+		Email:
+		<input type="email" id="email" name="email" required><br><br>
+		Password:
+		<input type="password" id="password" name="password" required><br><br>
+		Address:
+		<textarea id="address" name="address" required></textarea><br><br>
+		Pincode:
+		<input type="text" id="pincode" name="pincode" required><br><br>
+		phone number:
+		<input type="number" id="phno" name="phno" required><br><br>
+		<button type="submit" name="submit" onclick="return formvalidation()">Register</button>
+	</form>
+<script>
+function formvalidation()
+{
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var password=document.getElementById("password").value;
+var address=document.getElementById("address").value;
+var pincode=document.getElementById("pincode").value;
+var phno=document.getElementById("phno").value;
+
+if(name=="")
+{
+	alert("enter a valid username you!");
+return false;
+}
+if(email.trim()=="")
+{
+	alert("enter a valid email address");
+return false;
+}
+if(password.trim()=="")
+{
+	alert("enter a valid password");
+return false;
+}
+else if(password.length < 8)
+{
+	alert("password must contain at least 8 characters");
+return false;
+}
+if(address.trim()=="")
+{
+	alert("enter a valid address");
+return false;
+}
+if(pincode.trim()=="")
+{
+	alert("enter a valid pincode");
+return false;
+}
+if(phno.trim()=="")
+{
+	alert("enter your phone number");
+	return false;
+}
+alert("successfully registered");
+return true;
+}
+</script>
+</body>
+</html>

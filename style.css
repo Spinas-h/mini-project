@@ -1,0 +1,224 @@
+#form
+{
+    border-style:solid;
+    position:fixed;
+    bottom:250px;
+    padding:100px;
+    top:100px;
+    left:580px;
+    border-width:1px;
+    height:400px;
+
+}
+#mail
+{
+    height:45px;
+    width:400px;
+}
+
+body{
+    background-image:url(bgg.avif);
+    background-size:cover; 
+    background-position:center; 
+    background-repeat:no-repeat;
+}
+
+main{
+    margin:20px;
+}
+h1
+{
+    text-align:center;
+}
+.navbar ul{
+    list-style-type:none;
+    background-color:rgb(7, 100, 7);
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    gap:200px;
+
+    
+    
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding:15px;;
+    display:block;
+    text-align:center;
+}
+.navbar a:hover
+{
+    background-color:rgb(253, 251, 251);
+    color:black;
+}
+.navbar li{
+    float:left;
+}
+
+.products a{
+    float:left;
+}
+.category-set1{
+    display:flex;
+    flex-wrap:wrap;
+    gap:150px;
+    margin-bottom:200px;
+}
+.category-set2{
+    display:flex;
+    flex-wrap:wrap;
+    gap:50px;
+}
+.category1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-left:150px;
+}
+.category1 img{
+   
+    width:200px;
+    height:180px;
+}
+.category1 p{
+    margin-top:0px;
+    font-size:16px;
+    color:rgb(54, 16, 99)
+}
+.labtests p{
+    margin-left:50px;
+    padding:100px;
+}
+
+
+.category2{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    margin-left:30px;
+}
+.category2 img{
+    
+    width:320px;
+    height:290px;
+}
+.category2 p{
+    margin-top:10px;
+    font-size:16px;
+    color:rgb(216, 55, 27)
+}
+.slider{
+    position: relative;
+    width: 100%;
+    margin:auto;
+    overflow:hidden;
+}
+.slider img{
+    width:100%;
+    height:300px;
+    display:none;
+}
+img.displaySlide{
+    display:block;
+    animation-name:fade;
+    animation-duration:1.5s;
+    
+    
+    
+}
+.slider button{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:20px;
+    background-color:rgba(0, 0, 0, 0.699);
+    color:white;
+    border:none;
+    cursor:pointer;
+
+    
+}
+.previous{
+    left:0;
+}
+.next{
+    right:0;
+}
+@keyframes fade{
+    from{opacity: .3}
+    to{opacity: 1}
+
+}
+.health {
+    display: flex;
+    align-items: center; /* Center vertically */
+    padding:100px;
+}
+
+.health-content {
+    display: flex;
+    align-items: center; /* Center vertically */
+    border: 1px solid black; /* Add a rectangular border */
+    padding-left: 100px;
+    padding-right:100px; 
+    padding-top:30px;
+    padding-bottom:30px;
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.health img {
+    width: 100px; /* Set desired width */
+    height: 100px;; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.health-content:hover {
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.8); /* Glow effect */
+}
+
+.health p {
+    margin-left: 10px; /* Space between image and text */
+}
+footer {
+    background-color: #9afda3;  /* Pale green background */
+    padding: 20px;
+    margin-bottom:0%;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 15px;
+}
+
+.footer-section h3 {
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #9b1123; /* Pale green color for quick links */
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #073d09; /* Slightly darker green for the border */
+}
